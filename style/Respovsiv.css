@@ -2,6 +2,9 @@
     
 }
 @media screen  and (max-width:1200px) {
+    .about-us__img{
+        width: 100%;
+    }
     
 }
 @media screen  and (max-width:992px) {
@@ -23,6 +26,7 @@
         font-size: 1.3rem;
         padding: .9rem 0;
     }
+  
 }
 @media screen  and (max-width:768px) {
     .nav{
@@ -54,6 +58,13 @@
 .nav-menu__btn{
     margin: 2rem 0;
 }
+.about-us__wrapper{
+   flex-direction: column-reverse;
+   
+}
+.about-us__right{
+    align-items: center;
+}
     
 }
 @media screen  and (max-width:576px) {
@@ -61,7 +72,7 @@
         font-size: 4rem;
     }
     .header-content__description{
-        font-size: 1.2rem;
+        /* font-size:rem; */
     }
     
 }
@@ -70,7 +81,7 @@
         left: -2rem;
     }
     .header-content__title{
-        font-size: 3.5rem;
+        font-size: 3.8rem;
     }
     
 }

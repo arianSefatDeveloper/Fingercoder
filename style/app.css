@@ -172,7 +172,7 @@ a{
 
 /* mobile menue  */
 .nav-mobile{
-    
+
 }
 
 .nav-mobile__container{
@@ -201,6 +201,7 @@ a{
     width: 25rem;
     padding: 2.5rem;
     transition: all 250ms ease-in-out;
+    z-index: 99;
   
 }
 .nav-mobile__wrapper--open{
@@ -269,7 +270,7 @@ a{
 }
 .servic{
     background-color: #fff;
-    z-index: 99999999;
+    z-index: 40;
     box-shadow: 17px 17px 23px -3px rgba(0, 0, 0, 0.244);
    padding: 3rem 6rem;
    border-radius: 1rem;
@@ -295,3 +296,49 @@ a{
 }
 
 
+
+
+/* About Us Section  */
+
+.about-us{
+    margin: 10rem 0;
+
+}
+.about-us__wrapper{
+    display: flex;
+    gap: 4rem;
+}
+.about-us__right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 50%;
+    /* align-items: center; */
+    justify-content: center;
+}
+.about-us__title{
+    font-family: "Estedad Black";
+    font-size: 4rem;
+
+}
+.about-us__description{
+    font-family: "Estedad Medium";
+    
+}
+.about-us__link{
+    font-family: "Estedad Medium";
+    color: #fff;
+    background-color: #02C39A;
+    padding: 1rem 3rem ;
+    width: 16rem;
+    border-radius: .8rem;
+    text-align: center;
+    
+}
+
+.about-us__left{
+    flex-basis: 50%;
+}
+.about-us__img{
+    
+}
