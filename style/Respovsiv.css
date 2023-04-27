@@ -65,6 +65,10 @@
 .about-us__right{
     align-items: center;
 }
+
+.newest__list{
+    gap: 3rem;
+}
     
 }
 @media screen  and (max-width:576px) {
@@ -74,6 +78,7 @@
     .header-content__description{
         /* font-size:rem; */
     }
+   
     
 }
 @media screen  and (max-width:430px) {
@@ -83,7 +88,27 @@
     .header-content__title{
         font-size: 3.8rem;
     }
-    
+    /* .newesr__cards{
+        margin: 0 12rem;
+    } */
+    /* .newest{
+        padding-left:4rem ;
+        padding-right:4rem ;
+    } */
+    .card{
+        width: 100%;
+    }
+
+    .card__price{
+        font-size: 1.7rem;
+    }
+    .card__price-under{
+        font-size: 1rem;
+    }
+    .card__link{
+        padding: .8rem 3rem;
+        font-size: 1.4rem;
+    }
 }
 
 

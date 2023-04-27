@@ -392,6 +392,7 @@ a{
     justify-content: center;
     gap: 6rem;
     margin-top: 8rem;
+    flex-wrap: wrap;
 }
 .list__item{
     color: #02C39A;
@@ -416,6 +417,7 @@ a{
     justify-content: center;
     margin-top: 6rem;
     gap: 4rem;
+    flex-wrap: wrap;
 
 }
 .card{
@@ -484,4 +486,10 @@ margin-top: 1rem;
 .card__price-under{
     font-size: 1.4rem;
     
+}
+
+
+
+.gallery{
+    margin: 20rem 0 10rem 0;
 }
