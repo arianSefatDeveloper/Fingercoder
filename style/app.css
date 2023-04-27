@@ -1,0 +1,297 @@
+:root{
+/* colors and fonts */
+
+}
+
+
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;  /* = font-size = 10 px =>   */
+    scroll-behavior: smooth ;
+}
+
+*,*:after,*::before{
+    box-sizing: inherit;
+
+}
+
+body{
+    line-height: 1.6;
+    font-family:var(--primery-font); 
+    font-size: 1.6rem;      /* font => 1rem = 10px*/
+    background-color: var(--app-bg);
+
+    font-family: "Estedad Semibold";
+
+
+}
+
+/* reset */
+a{
+    text-decoration: none
+    ;
+}
+
+/* -- App -- */
+
+
+
+/* header */
+
+.header{
+   
+    background: linear-gradient(90deg, rgba(35, 35, 35, 0.69) 1.04%, rgba(28, 28, 28, 0.78) 100%) ,  url(../images/home-page-photo.jpg) ;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    /* margin-bottom: 20rem; */
+    /* z-index: -3; */
+    padding-top: 3rem;
+    /* position: relative; */
+    
+
+}
+
+.nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+ 
+    background: #d9d9d957;
+    /* background-blend-mode: overlay; */
+    backdrop-filter: blur(14.5px);
+    border-radius: 22px;
+
+}
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+
+}
+.app-logo{
+    margin-left: 2rem;
+   
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu__links{
+    
+
+}
+.nav-menu__link{
+    display: inline-block;
+    color: #fff;
+    margin: 0 2rem;
+}
+.nav-menu__btns{
+    margin-left: 2rem;
+    text-align: center;
+    cursor: pointer;
+
+}
+.nav-menu__btn{
+    padding: 1.1rem 0;
+    display: inline-block;
+    margin: 0 1rem;
+    color: #fff;
+    width: 9.5rem;
+    height: 5rem;
+    background-color: #02C39A;
+    border-radius: .8rem;
+    cursor: pointer;
+
+
+
+}
+
+.nav-menu__btn--outline{
+    border: 2px solid #02C39A;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #02C39A;
+    
+}
+
+.nav__toggle-icon{
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav__toggle-line{
+    
+    position: relative;
+    
+    
+}
+
+.nav__toggle-line,
+.nav__toggle-line::after,
+.nav__toggle-line::before{
+    content: '';
+    width: 4rem;
+    height: 0.4rem;
+    background-color: #02C39A;
+    border-radius: 2rem;
+    transition: all 200ms ease-in;
+}
+.nav__toggle-line::after{
+    position: absolute;
+    top: 1rem;
+}
+.nav__toggle-line::before{
+    position: absolute;
+    top: -1rem;
+}
+
+.nav__toggle-icon--open .nav__toggle-line{
+    background: transparent;
+    
+}
+.nav__toggle-icon--open .nav__toggle-line::before{
+    transform: translateY(1rem) rotate(45deg);
+    
+}
+.nav__toggle-icon--open .nav__toggle-line::after{
+    transform: translateY(-1rem) rotate(-45deg);
+    
+}
+
+
+/* mobile menue  */
+.nav-mobile{
+    
+}
+
+.nav-mobile__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+ 
+    background: #d9d9d957;
+    
+    backdrop-filter: blur(14.5px);
+    border-radius: 22px;
+}
+
+
+.nav-mobile__wrapper{
+    
+    background: #201f1f;
+    
+   
+   
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: -25rem;
+    width: 25rem;
+    padding: 2.5rem;
+    transition: all 250ms ease-in-out;
+  
+}
+.nav-mobile__wrapper--open{
+    left: 0;
+}
+
+.mobile__app-logo img{
+    width: 5rem;
+    height: 5rem;
+}
+
+
+/* Header contetn */
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 12rem;
+    gap: 2rem;
+
+}
+.header-content__title{
+    font-family:Bahman ;
+    font-size: 6rem;
+    color: #E6E6E6;
+    
+}
+.header-content__description{
+    font-family: "Estedad SemiBold";
+    max-width: 50rem;
+    color: #E6E6E6;
+    
+}
+.header-content__btn{
+    background-color: #02C39A;
+    color: #E6E6E6;
+    padding: 1.5rem 3.2rem;
+    border-radius: .8rem;
+
+
+}
+
+
+
+
+/*
+=======================
+        main
+=======================
+ */
+
+
+ /* services */
+
+ .services{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 6rem;
+    margin: -8rem 0 20rem  0;
+    
+}
+.servic{
+    background-color: #fff;
+    z-index: 99999999;
+    box-shadow: 17px 17px 23px -3px rgba(0, 0, 0, 0.244);
+   padding: 3rem 6rem;
+   border-radius: 1rem;
+   /* margin: 20rem 0; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+
+}
+.service__img{
+    width: 7rem;
+}
+.service__number{
+    font-family: "Estedad Bold";
+    font-size: 2rem;
+    
+}
+.service__Title{
+    font-family: "Estedad SemiBold";
+
+}
+
+
