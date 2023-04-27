@@ -342,3 +342,146 @@ a{
 .about-us__img{
     
 }
+
+
+
+
+/* newest Section */
+ 
+.newest{
+    margin: 10rem 0;
+
+}
+.section-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.section-head__title{
+    font-family: "Estedad Black";
+    font-size: 3rem;
+    color: #02C39A;
+}
+.section-head__line{
+    position: relative;
+    width: 20rem;
+    background-color: #02C39A;
+    height: .4rem;
+    border-radius: 4rem;
+}
+
+.section-head__line::after{
+    content: '';
+    width: 4rem;
+    height: 1rem;
+    border-radius: 4rem;
+    background-color: #02C39A;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.newest__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 8rem;
+}
+.list__item{
+    color: #02C39A;
+    border: 3px solid #02C39A;
+    border-radius: 4rem;
+    width: 10rem;
+    text-align: center;
+    padding: .5rem 0;
+    cursor: pointer;
+
+}
+
+.list__item--active{
+    color: white;
+    background-color: #02C39A;
+}
+
+
+.newesr__cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    gap: 4rem;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 17px 17px 23px -3px rgba(0, 0, 0, 0.244);
+    gap: 2rem;
+
+}
+.card__title{
+    font-size: "Estedad Bold";
+    font-size: 2.5rem;
+
+}
+.card__date{
+
+}
+.card__time{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: .5rem;
+
+}
+.card-time__text{
+
+}
+.card__location{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: .5rem;
+}
+.card-location__text{
+
+}
+.card__signin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.card__link{
+    color: white;
+    background: linear-gradient(275.22deg, rgba(2, 195, 154, 0.81) 6.14%, #02C39A 86.57%);
+border-radius: 17px;
+padding: 1rem 4rem;
+text-align: center;
+margin-right: .2rem;
+margin-top: 1rem;
+
+}
+.card__price-parent{
+    margin-left: 3rem;
+}
+.card__price{
+    font-size: 2rem;
+    
+
+}
+
+.card__price-under{
+    font-size: 1.4rem;
+    
+}
