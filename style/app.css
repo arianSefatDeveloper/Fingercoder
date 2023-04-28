@@ -488,8 +488,35 @@ margin-top: 1rem;
     
 }
 
-
+/* gallery section  */
 
 .gallery{
     margin: 20rem 0 10rem 0;
+}
+.gallery__wrapper{
+    margin: 10rem 0;
+}
+
+.swiper-pagination{
+    position: static !important;
+    margin-top: 1rem;
+}
+.swiper-pagination-bullet{
+    width: 2rem !important;
+    height: 2rem !important;
+    border: 4px solid #bfbebf !important;
+    background-color:#fff  !important;
+    opacity: 1 !important;
+    
+}
+
+ .swiper-pagination-bullet-active{
+    border-color: #02C39A!important;
+ }
+
+ .swiper-content__img{
+    width: 100%;
+    height: 31.1rem;
+    /* object-fit: cover; */
+
 }

@@ -321,12 +321,46 @@
                 </ul>
             </div>
             <div class="gallery__wrapper">
-                
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="swiper-content__img" src="../images/gallery1.jpg" alt="gallery Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-content__img" src="../images/gallery2.jpg" alt="gallery Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-content__img" src="../images/gallery3.jpg" alt="gallery Image">
+                        </div>
+                       
+                        <div class="swiper-slide">
+                            <img class="swiper-content__img" src="../images/gallery5.jpg" alt="gallery Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-content__img" src="../images/gallery6.jpg" alt="gallery Image">
+                        </div>
+                       
+                        <div class="swiper-slide">
+                            <img class="swiper-content__img" src="../images/gallery8.jpg" alt="gallery Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-content__img" src="../images/gallery9.jpg" alt="gallery Image">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
             </div>
         </section>
 
     </div>
 </main>
+
+
+<footer class="footer">
+    
+</footer>
 
 
 
@@ -335,5 +369,26 @@
 
     <script src="../javaScript/main.js"></script>
     <script src="../javaScript/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        const swiper = new Swiper('.swiper', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            spaceBetween: 30,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2
+
+                },
+
+                1200: {
+                    slidesPerView: 3
+
+                }
+
+            }
+        })
+
+    </script>
 </body>
 </html>
