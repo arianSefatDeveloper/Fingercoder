@@ -24,6 +24,7 @@ body{
     background-color: var(--app-bg);
 
     font-family: "Estedad Semibold";
+    overflow-x: hidden;
 
 
 }
@@ -42,7 +43,7 @@ a{
 
 .header{
    
-    background: linear-gradient(90deg, rgba(35, 35, 35, 0.69) 1.04%, rgba(28, 28, 28, 0.78) 100%) ,  url(../images/home-page-photo.jpg) ;
+    background: linear-gradient(90deg, rgba(35, 35, 35, 0.69) 1.04%, rgba(28, 28, 28, 0.78) 100%) ,  url(../images/gallery2.jpg) ;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -519,4 +520,134 @@ margin-top: 1rem;
     height: 31.1rem;
     /* object-fit: cover; */
 
+}
+
+
+
+
+
+/* footer */
+.footer{
+    padding: 5rem 0 1rem 0;
+    background-color: #262F2D;
+   margin: 20rem 0 0 0;
+   position: relative;
+  
+}
+
+
+
+.footer__arrow{
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    position: absolute;
+    top: -2rem;
+    right: 3rem;
+    box-shadow: 5px 1px 14px rgba(0, 0, 0, 0.25);
+ 
+
+}
+.footer__arrow svg{
+    transform: rotate(90deg);
+    
+}
+
+.footer__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 2rem;
+
+    font-family: "Estedad Bold";
+    color: white;
+}
+.footer__title{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+
+}
+.footer__disc{
+    display: flex;
+   
+    /* justify-content: center; */
+    align-items: center;
+    
+   gap: 1rem;
+    
+
+}
+.footer__text{
+
+}
+
+
+
+.footer__left{
+
+}
+.footer__links{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 0rem;
+
+}
+.footer__link{
+    border: 2px solid #02C39A;
+    border-radius: 1rem;
+    color: #02C39A;
+    padding: 1rem 4rem;
+
+}
+.footer__link--fill{
+    color: white;
+    background-color: #02C39A;
+
+}
+.footer__imgs{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+}
+.footer__img{
+
+}
+
+.footer__social{
+    
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.creat{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: rgb(196, 191, 191);
+
+}
+
+.creat span{
+    color: #02C39A;
+    cursor: pointer;
 }
