@@ -5,6 +5,9 @@
     .about-us__img{
         width: 100%;
     }
+    .ticket-left__title{
+        font-size: 2rem;
+    }
     
 }
 @media screen  and (max-width:992px) {
@@ -30,6 +33,16 @@
         flex-direction: column;
         gap: 5rem;
     }
+.ticket-wrapper{
+    flex-wrap: wrap;
+}
+.tiket__img{
+    width: 40rem;
+}
+.ticket-right{
+    padding: 0;
+    border: none;
+}
   
 }
 @media screen  and (max-width:768px) {
@@ -79,9 +92,7 @@
     .header-content__title{
         font-size: 4rem;
     }
-    .header-content__description{
-        /* font-size:rem; */
-    }
+   
 
     .footer__link{
         font-size: 1.3rem;
@@ -102,6 +113,9 @@
     .footer__links{
         line-height: 2rem;
 
+    }
+    .tiket__img{
+        width: 38rem;
     }
    
     
@@ -154,6 +168,10 @@
     }
     .footer__text{
         font-size: 1.4rem;
+    }
+
+    .tiket__img{
+        width: 33rem;
     }
    
    

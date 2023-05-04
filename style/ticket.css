@@ -1,0 +1,389 @@
+
+
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;  /* = font-size = 10 px =>   */
+    scroll-behavior: smooth ;
+}
+
+*,*:after,*::before{
+    box-sizing: inherit;
+
+}
+
+body{
+    line-height: 1.6;
+    font-family:var(--primery-font); 
+    font-size: 1.6rem;      /* font => 1rem = 10px*/
+    background-color: var(--app-bg);
+
+    font-family: "Estedad Semibold";
+    overflow-x: hidden;
+
+
+}
+
+/* reset */
+a{
+    text-decoration: none
+    ;
+}
+
+/* -- App -- */
+
+
+
+/* header */
+
+.header{
+   
+    
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    /* min-height: 100vh; */
+    position: relative;
+    /* margin-bottom: 20rem; */
+    /* z-index: -3; */
+    padding-top: 3rem;
+    /* position: relative; */
+
+    margin-bottom: 10rem;
+    
+
+}
+
+.nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+ 
+    background: #2E2E2E;
+   
+    border-radius: 22px;
+
+}
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+
+}
+.app-logo{
+    margin-left: 2rem;
+   
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu__links{
+    
+
+}
+.nav-menu__link{
+    display: inline-block;
+    color: #fff;
+    margin: 0 2rem;
+}
+.nav-menu__btns{
+    margin-left: 2rem;
+    text-align: center;
+    cursor: pointer;
+
+}
+.nav-menu__btn{
+    padding: 1.1rem 0;
+    display: inline-block;
+    margin: 0 1rem;
+    color: #fff;
+    width: 9.5rem;
+    height: 5rem;
+    background-color: #02C39A;
+    border-radius: .8rem;
+    cursor: pointer;
+
+
+
+}
+
+.nav-menu__btn--outline{
+    border: 2px solid #02C39A;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #02C39A;
+    
+}
+
+.nav__toggle-icon{
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav__toggle-line{
+    
+    position: relative;
+    
+    
+}
+
+.nav__toggle-line,
+.nav__toggle-line::after,
+.nav__toggle-line::before{
+    content: '';
+    width: 4rem;
+    height: 0.4rem;
+    background-color: #02C39A;
+    border-radius: 2rem;
+    transition: all 200ms ease-in;
+}
+.nav__toggle-line::after{
+    position: absolute;
+    top: 1rem;
+}
+.nav__toggle-line::before{
+    position: absolute;
+    top: -1rem;
+}
+
+.nav__toggle-icon--open .nav__toggle-line{
+    background: transparent;
+    
+}
+.nav__toggle-icon--open .nav__toggle-line::before{
+    transform: translateY(1rem) rotate(45deg);
+    
+}
+.nav__toggle-icon--open .nav__toggle-line::after{
+    transform: translateY(-1rem) rotate(-45deg);
+    
+}
+
+
+/* mobile menue  */
+.nav-mobile{
+
+}
+
+.nav-mobile__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+ 
+    background: #2E2E2E;
+    
+
+    backdrop-filter: blur(14.5px);
+    border-radius: 22px;
+}
+
+
+.nav-mobile__wrapper{
+    
+    background: #201f1f;
+    
+   
+   
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: -25rem;
+    width: 25rem;
+    padding: 2.5rem;
+    transition: all 250ms ease-in-out;
+    z-index: 99;
+  
+}
+.nav-mobile__wrapper--open{
+    left: 0;
+}
+
+.mobile__app-logo img{
+    width: 5rem;
+    height: 5rem;
+}
+
+
+
+
+
+
+
+
+
+/* 
+    Main
+*/
+
+
+.main-ticket{margin-bottom: 10rem;
+
+}
+.ticket-wrapper{
+    display: flex;
+    /* align-items: center; */
+    gap: 9rem;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+
+}
+
+/* right side */
+.ticket-right{
+    display: flex;
+    flex-direction: column;
+    /* flex-basis: 60%; */
+    padding-left: 8rem;
+    border-left: 5px dashed #000;
+
+}
+.tiket__img{
+    margin-bottom: 4rem;
+    width: 50rem;
+
+}
+.ticket-counter{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.ticket-right__price-titles{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 1rem;
+    font-family: "Estedad Bold";
+
+    
+
+}
+.ticket-right__price-title{
+
+}
+.ticket-right__price-numbers{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    padding: 2rem 0;
+    font-family: "Estedad Bold";
+
+
+}
+.ticket-right__price-number{
+
+}
+.ticket-plus{
+    background-color: #D9D9D9;
+    color: #02C39A;
+    cursor: pointer;
+    border-radius: .5rem;
+    font-family: "Estedad Bold";
+    font-size: 2.5rem;
+    font-weight: bolder;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.ticket-mines{
+    background-color: #D9D9D9;
+    color: #02C39A;
+    cursor: pointer;
+    border-radius: .5rem;
+    font-family: "Estedad Bold";
+    font-size: 2.5rem;
+    font-weight: bolder;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+    
+
+}
+
+
+/* Left Side */
+
+.ticket-left{
+    /* flex-basis: 40%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    
+}
+.ticket-left__title{
+    font-size: 3rem;
+    font-family: "Estedad Black";
+
+    
+}
+.ticket-date__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+ 
+}
+.ticket-left__date{
+    
+}
+.ticket-left__time{
+    
+}
+.ticket-input__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+}
+.ticket-left__input{
+    font-family: "Estedad Medium";
+    /* border: 5px dashed #000; */
+    outline: none;
+    background: #EFEFEF;
+    border: 3px dashed rgba(0, 0, 0, 0.56);
+    box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    padding: 1rem 4rem;
+
+    
+}
+.ticket-left__btn{
+    font-family: "Estedad Medium";
+
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    padding: 1.5rem 4rem ;
+    cursor: pointer;
+
+}
+.ticket-left__submit-btn{
+    font-family: "Estedad Bold";
+
+    background: linear-gradient(93.39deg, #4BFED8 3.91%, #02C39A 101.7%);
+box-shadow: 3px 10px 24px rgba(0, 0, 0, 0.25);
+border-radius:1rem;
+color: #fff;
+padding: 2rem 8rem;
+}
