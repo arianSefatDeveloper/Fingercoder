@@ -69,6 +69,11 @@ a{
     backdrop-filter: blur(14.5px);
     border-radius: 22px;
 
+    animation-name: nav;
+    animation-duration: 1s;
+    /* animation-delay: .5s; */
+    animation-fill-mode: backwards;
+
 }
 .nav-wrapper{
     display: flex;
@@ -93,6 +98,10 @@ a{
     display: inline-block;
     color: #fff;
     margin: 0 2rem;
+    transition: 200ms ease-in;
+}
+.nav-menu__link:hover{
+    color: #02C39A;
 }
 .nav-menu__btns{
     margin-left: 2rem;
@@ -231,12 +240,19 @@ a{
     font-family:Bahman ;
     font-size: 6rem;
     color: #E6E6E6;
+    animation-name: anim;
+    animation-duration: 2s;
     
 }
 .header-content__description{
     font-family: "Estedad SemiBold";
     max-width: 50rem;
     color: #E6E6E6;
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+    
     
 }
 .header-content__btn{
@@ -244,6 +260,11 @@ a{
     color: #E6E6E6;
     padding: 1.5rem 3.2rem;
     border-radius: .8rem;
+
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .8s;
+    animation-fill-mode: backwards;
 
 
 }
@@ -282,6 +303,10 @@ a{
    align-items: center;
    gap: 1rem;
 
+   animation-name: anim2;
+   animation-duration: 3s;
+   animation-delay: .5s;
+   animation-fill-mode: backwards;
 }
 .service__img{
     width: 7rem;
@@ -341,7 +366,7 @@ a{
     flex-basis: 50%;
 }
 .about-us__img{
-    
+
 }
 
 
@@ -624,6 +649,7 @@ margin-top: 1rem;
 
 }
 .footer__img{
+    cursor: pointer;
 
 }
 
@@ -634,6 +660,7 @@ margin-top: 1rem;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    
 }
 
 .creat{
@@ -647,7 +674,44 @@ margin-top: 1rem;
 
 }
 
-.creat span{
+.creat a{
     color: #02C39A;
     cursor: pointer;
 }
+
+
+
+@keyframes anim {
+    0%{
+        transform: translateX(12rem);
+        opacity: 0;
+    }   
+    100%{
+        transform: translateX(0rem);
+        opacity: 1;
+
+    } 
+}
+@keyframes anim2 {
+    0%{
+        transform: translateY(12rem);
+        opacity: 0;
+    }   
+    100%{
+        transform: translateY(0rem);
+        opacity: 1;
+
+    } 
+}
+@keyframes nav {
+    0%{
+        transform: translateY(-12rem);
+        opacity: 0;
+    }   
+    100%{
+        transform: translateY(0rem);
+        opacity: 1;
+
+    } 
+}
+
