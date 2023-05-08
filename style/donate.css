@@ -1,0 +1,322 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* = font-size = 10 px =>   */
+    scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*::before {
+    box-sizing: inherit;
+
+}
+
+body {
+    line-height: 1.6;
+    font-family: var(--primery-font);
+    font-size: 1.6rem;
+    /* font => 1rem = 10px*/
+    background-color: var(--app-bg);
+
+    font-family: "Estedad Semibold";
+    overflow-x: hidden;
+
+
+}
+
+/* reset */
+a {
+    text-decoration: none;
+}
+
+/* -- App -- */
+
+
+
+/* header */
+
+.header {
+
+
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    /* min-height: 100vh; */
+    position: relative;
+    /* margin-bottom: 20rem; */
+    /* z-index: -3; */
+    padding-top: 3rem;
+    /* position: relative; */
+
+    margin-bottom: 4rem;
+
+
+}
+
+.nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    background: #2E2E2E;
+
+    border-radius: 22px;
+
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+
+}
+
+.app-logo {
+    margin-left: 2rem;
+
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu__links {}
+
+.nav-menu__link {
+    display: inline-block;
+    color: #fff;
+    margin: 0 2rem;
+    transition: 200ms ease-in;
+}
+.nav-menu__link:hover{
+    color: #02C39A;
+}
+
+.nav-menu__btns {
+    margin-left: 2rem;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.nav-menu__btn {
+    padding: 1.1rem 0;
+    display: inline-block;
+    margin: 0 1rem;
+    color: #fff;
+    width: 9.5rem;
+    height: 5rem;
+    background-color: #02C39A;
+    border-radius: .8rem;
+    cursor: pointer;
+
+
+
+}
+
+.nav-menu__btn--outline {
+    border: 2px solid #02C39A;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #02C39A;
+
+}
+
+.nav__toggle-icon {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav__toggle-line {
+
+    position: relative;
+
+
+}
+
+.nav__toggle-line,
+.nav__toggle-line::after,
+.nav__toggle-line::before {
+    content: '';
+    width: 4rem;
+    height: 0.4rem;
+    background-color: #02C39A;
+    border-radius: 2rem;
+    transition: all 200ms ease-in;
+}
+
+.nav__toggle-line::after {
+    position: absolute;
+    top: 1rem;
+}
+
+.nav__toggle-line::before {
+    position: absolute;
+    top: -1rem;
+}
+
+.nav__toggle-icon--open .nav__toggle-line {
+    background: transparent;
+
+}
+
+.nav__toggle-icon--open .nav__toggle-line::before {
+    transform: translateY(1rem) rotate(45deg);
+
+}
+
+.nav__toggle-icon--open .nav__toggle-line::after {
+    transform: translateY(-1rem) rotate(-45deg);
+
+}
+
+
+/* mobile menue  */
+.nav-mobile {}
+
+.nav-mobile__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    background: #2E2E2E;
+
+
+    backdrop-filter: blur(14.5px);
+    border-radius: 22px;
+}
+
+
+.nav-mobile__wrapper {
+
+    background: #201f1f;
+
+
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -25rem;
+    width: 25rem;
+    padding: 2.5rem;
+    transition: all 250ms ease-in-out;
+    z-index: 99;
+
+}
+
+.nav-mobile__wrapper--open {
+    left: 0;
+}
+
+.mobile__app-logo img {
+    width: 5rem;
+    height: 5rem;
+}
+
+
+
+/* 
+=====================
+        main
+=====================
+*/
+
+.donate-wrapper {
+    display: flex;
+    margin-bottom: 20rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+}
+
+.donate-mobile__title {
+    font-family: "Bahman";
+    font-size: 4rem;
+    color:#02C39A;
+    margin: 0;
+}
+.donate-mobile__title-p {
+    font-family: "Estedad Bold"
+}
+.text-wrapper{
+    text-align: center;
+}
+
+.donate-input {
+    width: 40rem;
+
+    height: 6rem;
+    padding: 1rem 2rem;
+    font-family: "Estedad Medium";
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    border-radius: 1rem;
+    outline: none;
+}
+
+.donate-btn {
+    background: #02C39A;
+    border-radius: .8rem;
+    color: #fff;
+    font-family: "estedad Bold";
+    padding: 1.5rem 4rem;
+}
+.donate-card__wrapper{
+    display: flex;
+    gap: 6rem;
+    margin-top: 4rem;
+}
+
+.donate-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    background: #FFFFFF;
+    box-shadow: 7px 10px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    width: 17rem;
+    padding: 4rem 0rem;
+    position: relative;
+}
+
+.donate-title {}
+
+.donate-price {}
+
+
+.donate-medal {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+}
+
+.donate-avatar {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+
+
+

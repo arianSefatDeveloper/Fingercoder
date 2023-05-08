@@ -86,6 +86,13 @@
 .newest__list{
     gap: 3rem;
 }
+
+.donate-card__wrapper{
+    gap: 4rem;
+}
+.donate-card{
+    width: 15rem;
+}
     
 }
 @media screen  and (max-width:576px) {
@@ -117,7 +124,21 @@
     .tiket__img{
         width: 38rem;
     }
-   
+
+    .donate-card {
+        width: 13rem;
+    }
+    .donate-avatar{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .donate-medal{
+        width: 4rem;
+    }
+    .donate-card__wrapper{
+        gap: 1rem;
+    }
     
 }
 @media screen  and (max-width:430px) {
@@ -173,7 +194,23 @@
     .tiket__img{
         width: 33rem;
     }
-   
+    /* .donate-card__wrapper{
+        flex-direction: column;
+    } */
+    .donate-input{
+        width: 30rem;
+    }
+    .donate-mobile__title{
+        font-size: 3rem;
+    }
+    .donate-card {
+        width: 10rem;
+        padding: 2rem 0;
+    }
+    .donate-avatar{
+        width: 4rem;
+        height: 4rem;
+    }
    
 }
 
