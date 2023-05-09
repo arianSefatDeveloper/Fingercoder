@@ -214,6 +214,21 @@
     .signin-input{
         width: 30rem;
     }
+
+    .signin-input--name ,.signin-input--email ,.signin-input--pass{
+        
+        
+           
+            background-position:272px  
+        
+       
+        
+    
+    
+        
+        
+    
+    }
 }
 
 

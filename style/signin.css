@@ -240,7 +240,7 @@ a {
     justify-content: center;
     gap: 6rem;
     /* background: radial-gradient(44.56% 50% at 44.56% 50%, #D5F8F0 0%, #02C39A 100%); */
-    height: 100vh;
+    height: 90vh;
   
 }
 
@@ -293,11 +293,14 @@ a {
     border:none;
     border-radius: .8rem;
     outline: none;
-    padding: 1.3rem 2rem;
+    padding: 1.3rem 3rem;
     width: 36rem;
     font-family: "Estedad Medium";
     color: #ffffff;
     box-shadow: 2px 2px 12px #02c39992;
+    padding-left: 25px;
+    background: url("../images/Mask\ group\ \(3\).png") no-repeat right;
+    background-size: 20px;
 
 }
 
@@ -325,4 +328,25 @@ a {
 
 .login-input{
     margin-bottom: 2rem;
+}
+
+
+.signin-input--name{
+    /* padding-right: 8rem; */
+    background: url("../images/Mask\ group\ \(3\).png") no-repeat right;
+    background-size: 20px;
+    background-position:332px  ;
+    
+}
+.signin-input--email{
+    background: url("../images/Mask\ group\ \(5\).png") no-repeat right;
+    background-size: 20px;
+    background-position:332px  ;
+    
+}
+.signin-input--pass{
+    background: url("../images/Mask\ group\ \(4\).png") no-repeat right;
+    background-size: 20px;
+    background-position:332px  ;
+
 }
