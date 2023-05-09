@@ -211,7 +211,9 @@
         width: 4rem;
         height: 4rem;
     }
-   
+    .signin-input{
+        width: 30rem;
+    }
 }
 
 
