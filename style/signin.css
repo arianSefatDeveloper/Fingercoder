@@ -350,3 +350,25 @@ a {
     background-position:332px  ;
 
 }
+
+
+/* =============== Scroll Bar================= */
+
+ /* width */
+ ::-webkit-scrollbar {
+    width: 4px;
+    /* background-color: #262F2D; */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #02C39A;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #02C39A;
+    border-radius: 10px;
+  } 
+
