@@ -22,7 +22,10 @@ body {
     font-family: "Estedad Semibold";
     overflow-x: hidden;
 
-
+    background: linear-gradient(90deg, rgba(35, 35, 35, 0.69) 1.04%, rgba(28, 28, 28, 0.78) 100%) ,  url(../images/gallery2.jpg) ;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
 
 /* reset */
@@ -64,6 +67,10 @@ a {
     background: #2E2E2E;
 
     border-radius: 22px;
+    animation-name: nav;
+    animation-duration: 1s;
+    /* animation-delay: .5s; */
+    animation-fill-mode: backwards;
 
 }
 
@@ -252,9 +259,16 @@ a {
     font-size: 4rem;
     color:#02C39A;
     margin: 0;
+    animation-name: anim;
+    animation-duration: 2s
 }
 .donate-mobile__title-p {
-    font-family: "Estedad Bold"
+    font-family: "Estedad Bold";
+    color: #fff;
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
 }
 .text-wrapper{
     text-align: center;
@@ -270,6 +284,10 @@ a {
     border: 1px solid #000000;
     border-radius: 1rem;
     outline: none;
+    animation-name: anim;
+    animation-duration: 3s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
 }
 
 .donate-btn {
@@ -278,6 +296,10 @@ a {
     color: #fff;
     font-family: "estedad Bold";
     padding: 1.5rem 4rem;
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .7s;
+    animation-fill-mode: backwards;
 }
 .donate-card__wrapper{
     display: flex;
@@ -292,15 +314,28 @@ a {
     align-items: center;
     justify-content: center;
 
-    background: #FFFFFF;
+    background: rgb(232, 232, 232);
     box-shadow: 7px 10px 6px rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
     width: 17rem;
     padding: 4rem 0rem;
     position: relative;
+    /* background-color: #e0f9f49c; */
+
+    animation-name: anim2;
+    animation-duration: 3s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+
+}
+.donate-card:nth-child(2){
+    /* box-shadow: 7px 10px 6px #02C39A; */
+    border: 4px solid #02C39A;
 }
 
-.donate-title {}
+.donate-title {
+   
+}
 
 .donate-price {}
 
@@ -319,4 +354,68 @@ a {
 
 
 
+
+
+
+
+
+/* ======== Animations ======== */
+
+
+@keyframes anim {
+    0%{
+        transform: translateX(12rem);
+        opacity: 0;
+    }   
+    100%{
+        transform: translateX(0rem);
+        opacity: 1;
+
+    } 
+}
+@keyframes anim2 {
+    0%{
+        transform: translateY(12rem);
+        opacity: 0;
+    }   
+    100%{
+        transform: translateY(0rem);
+        opacity: 1;
+
+    } 
+}
+@keyframes nav {
+    0%{
+        transform: translateY(-12rem);
+        opacity: 0;
+    }   
+    100%{
+        transform: translateY(0rem);
+        opacity: 1;
+
+    } 
+}
+
+
+
+
+/* =============== Scroll Bar================= */
+
+ /* width */
+ ::-webkit-scrollbar {
+    width: 7px;
+    /* background-color: #262F2D; */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #02C39A;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #02C39A;
+    border-radius: 10px;
+  } 
 
