@@ -457,6 +457,10 @@ a{
     gap: 2rem;
 
 }
+.card__img{
+    width: 36rem;
+    height: 26rem;
+}
 .card__title{
     font-size: "Estedad Bold";
     font-size: 2.5rem;
@@ -717,9 +721,11 @@ margin-top: 1rem;
 
 
 
+/* =============== Scroll Bar================= */
+
  /* width */
  ::-webkit-scrollbar {
-    width: 20px;
+    width: 8px;
     /* background-color: #262F2D; */
   }
   
