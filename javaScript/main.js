@@ -106,7 +106,7 @@ newestArrayAll.forEach(item =>{
             <span class="card-location__text">${item.loc}</span>
         </div>
         <div class="card__signin">
-        <a class="card__link" href="./ticket.html?id=${item.id}">ثبت نام</a>
+        <a class="card__link" href="./html/ticket.html?id=${item.id}">ثبت نام</a>
             
             <div class="card__price-parent">
     

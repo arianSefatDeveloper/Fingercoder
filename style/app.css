@@ -458,11 +458,12 @@ a{
 
 }
 .card__img{
-    width: 36rem;
-    height: 26rem;
+    width: 30rem;
+    height: 22rem;
+    margin: auto;
 }
 .card__title{
-    font-size: "Estedad Bold";
+    font-family: "Estedad Bold";
     font-size: 2.5rem;
 
 }

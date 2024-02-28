@@ -43,6 +43,11 @@
     padding: 0;
     border: none;
 }
+.card__img{
+    height: 25rem;
+    width: 27rem;
+    
+}
   
 }
 @media screen  and (max-width:768px) {
@@ -217,17 +222,13 @@
 
     .signin-input--name ,.signin-input--email ,.signin-input--pass{
         
-        
            
             background-position:272px  
-        
-       
-        
+         
     
-    
-        
-        
-    
+    }
+    .card__img{
+        width: 100%;
     }
 }
 
