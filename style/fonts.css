@@ -1,24 +1,30 @@
 @font-face {
     font-family:"Estedad Black" ;
-    src: url(../fonts/Estedad-Black.ttf);
+    src:local("Estedad Black"), url(../fonts/Estedad-Black.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family:"Estedad Bold" ;
-    src: url(../fonts/Estedad-Bold.ttf);
+    src: local("Estedad Bold"), url(../fonts/Estedad-Bold.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family:"Estedad SemiBold" ;
-    src: url(../fonts/Estedad-SemiBold.ttf);
+    src: local("Estedad SemiBold"), url(../fonts/Estedad-SemiBold.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family:"Estedad Medium" ;
-    src: url(../fonts/Estedad-Medium.ttf);
+    src:local("Estedad Medium"),  url(../fonts/Estedad-Medium.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family:"Bahman" ;
-    src: url(../fonts/Bahman\ 1.ttf);
+    src: local("Bahman Black"), url(../fonts/Bahman\ 1.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family:"Bahman Black" ;
-    src: url(../fonts/Estedad-Black.ttf);
+    src: local("Bahman Black"), url(../fonts/Estedad-Black.ttf);
+    font-display: swap;
 }
