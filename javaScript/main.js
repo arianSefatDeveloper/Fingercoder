@@ -7,18 +7,18 @@ let newestCards = $.querySelector(".newesr__cards")
 
 
 let newestArrayAll =[
-    {id:1 , title:"ربات نویسی هوشمند" , date:"جمعه ۱۷ دی ماه" , time:"۱۵:۳۰ الی ۱۸:۳۰" , loc:"شیراز" , price:"۲۰۰۰۰", img:"../images/card-page-photo.png"},
-    {id:2 , title:"هوش مصنوعی" , date:"جمعه ۲۴ دی ماه" , time:"۱۵:۳۰ الی ۱۸:۳۰" , loc:"بندرعباس" , price:" ۱۲۰۰۰", img:"../images/ticket-page-photo.jpg"},
-    {id:3 , title:"آموزش لینکدین" , date:"جمعه ۱ بهمن ماه" , time:"۱۵:۳۰ الی ۱۸:۳۰" , loc:"تهران" , price:"رایگان", img:"../images/card-page-photo.png"},
+    {id:1 , title:"ربات نویسی هوشمند" , date:"جمعه ۱۷ دی ماه" , time:"۱۵:۳۰ الی ۱۸:۳۰" , loc:"شیراز" , price:"۲۰۰۰۰", img:"./images/card-page-photo.png"},
+    {id:2 , title:"هوش مصنوعی" , date:"جمعه ۲۴ دی ماه" , time:"۱۵:۳۰ الی ۱۸:۳۰" , loc:"بندرعباس" , price:" ۱۲۰۰۰", img:"./images/ticket-page-photo.jpg"},
+    {id:3 , title:"آموزش لینکدین" , date:"جمعه ۱ بهمن ماه" , time:"۱۵:۳۰ الی ۱۸:۳۰" , loc:"تهران" , price:"رایگان", img:"./images/card-page-photo.png"},
 ]
 let newestArrayShiraz =[
-    {id:1 , title:"ربات نویسی هوشمند" , date:"جمعه ۱۷ دی ماه" , time:"۱۵:۳۰ الی ۱۸:۳۰" , loc:"شیراز" , price:"۲۰۰۰۰", img:"../images/card-page-photo.png"},
+    {id:1 , title:"ربات نویسی هوشمند" , date:"جمعه ۱۷ دی ماه" , time:"۱۵:۳۰ الی ۱۸:۳۰" , loc:"شیراز" , price:"۲۰۰۰۰", img:"./images/card-page-photo.png"},
 ]
 let newestArrayTehran =[
-    {id:3 , title:"آموزش لینکدین" , date:"جمعه ۱ بهمن ماه" , time:"۱۵:۳۰ الی ۱۸:۳۰" , loc:"تهران" , price:"رایگان", img:"../images/card-page-photo.png"},
+    {id:3 , title:"آموزش لینکدین" , date:"جمعه ۱ بهمن ماه" , time:"۱۵:۳۰ الی ۱۸:۳۰" , loc:"تهران" , price:"رایگان", img:"./images/card-page-photo.png"},
 ]
 let newestArraybandar =[
-    {id:2 , title:"هوش مصنوعی" , date:"جمعه ۲۴ دی ماه" , time:"۱۵:۳۰ الی ۱۸:۳۰" , loc:"بندرعباس" , price:" ۱۲۰۰۰", img:"../images/ticket-page-photo.jpg "},
+    {id:2 , title:"هوش مصنوعی" , date:"جمعه ۲۴ دی ماه" , time:"۱۵:۳۰ الی ۱۸:۳۰" , loc:"بندرعباس" , price:" ۱۲۰۰۰", img:"./images/ticket-page-photo.jpg "},
 ]
 
 
